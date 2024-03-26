@@ -8,13 +8,14 @@ block content
     { instrument_type: "Keyboard", brand: "Roland", price: 800 }
   ]
 
-  div(class="container-fluid")
-    div(class="row")
+  .container-fluid
+    .row
       each f,index in results 
-        div(class="col-sm-2",onclick=`buy(${index})`) #{f.instrument_type}, #{f.brand}, #{f.price}
-        script. 
-          function buy(index){
-            alert(`you purchased Item: ${index+1}`)
-          }
-        
-     
+        .col-sm-2(onclick=`buy(${index})`)
+          | #{f.instrument_type}, #{f.brand}, $#{f.price}
+          
+  script.
+    function buy(index) {
+      alert(`You purchased Item: ${index+1}`);
+    }
+

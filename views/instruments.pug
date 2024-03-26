@@ -2,11 +2,7 @@ extends layout
 
 block content
   h1= title
-  - var results = [
-    { instrument_type: "Guitar", brand: "Fender", price: 500 },
-    { instrument_type: "Drums", brand: "Pearl", price: 1200 },
-    { instrument_type: "Keyboard", brand: "Roland", price: 800 }
-  ]
+  - var results = [{instrument_type: "Guitar", brand: "Fender", price: 500},{instrument_type: "Drums", brand: "Pearl", price: 1200},{instrument_type: "Keyboard", brand: "Roland", price: 800}]
 
   .container-fluid
     .row

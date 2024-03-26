@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var instrumentsRouter = require('./routes/instruments');
 var gridRouter = require('./routes/grid');
+var pickRouter = require('./routes/pick')
+
 
 
 
@@ -27,6 +29,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/instruments', instrumentsRouter);
 app.use('/grid',gridRouter);
+app.use('/pick', pickRouter)
+
 
 
 
